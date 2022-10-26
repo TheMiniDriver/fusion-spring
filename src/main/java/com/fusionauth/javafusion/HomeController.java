@@ -16,5 +16,11 @@ public class HomeController {
       model.addAttribute("appName", appName);
       return "home";
   }
+
+  @RequestMapping("/user")
+  public String userPage(Model model) {
+      model.addAttribute("appName", "SUPER USER");
+      return "home";
+  }
   
 }
