@@ -17,10 +17,9 @@ public class HomeController {
       return "home";
   }
 
-  @RequestMapping("/user")
-  public String userPage(Model model) {
-      model.addAttribute("appName", "SUPER USER");
-      return "home";
-  }
+  // @RequestMapping("/logout")
+  // public String userPage(Model model) {
+      
+  // }
   
 }
