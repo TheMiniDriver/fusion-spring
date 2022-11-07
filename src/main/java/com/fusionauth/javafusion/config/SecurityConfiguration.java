@@ -30,6 +30,11 @@ public class SecurityConfiguration {
             .anyRequest().authenticated())
         .oauth2Login();
 
+    
+    http.logout(logout -> logout
+          .logoutSuccessUrl("/")
+        );
+
        // resolver.setAuthorizationRequestCustomizer(OAuth2AuthorizationRequestCustomizers.withPkce());
 
     return http.build();
